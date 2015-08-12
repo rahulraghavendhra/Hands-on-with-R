@@ -1,0 +1,18 @@
+1) heart <- read.table("processed.va.data", sep=",", col.names = c("age", "sex", "chest_pain_type", "resting_blod_pressure", "serum_cholestoral", "fasting_blood_sugar_greater_than_120", "resting_electrocardiograph", "maximum_heart_rate_achieved", "exercise_induced_angina", "stdepression_induced_by_exercise_related_to_rest", "slope_of_peak_exercise", "flourosopy_colored_vessels", "thal", "heart_disease_diagnosis"), na.strings=c("?"), colClasses="numeric")
+
+2) sum(is.na(df$col))
+
+
+http://en.wikipedia.org/wiki/Missing_data
+http://www.sagepub.com/upm-data/45664_6.pdf
+http://ferran.torres.name/wp-content/uploads/2013/08/Missing-Data-dij1461.pdf
+http://www.bmj.com/content/338/bmj.b2393
+
+
+3)
+
+4)
+
+5) x <- data.frame(heart$age, heart$sex, heart$chest_pain_type, heart$resting_electrocardiograph, heart$heart_disease_diagnosis)
+   y <- data.frame(heart$age, heart$sex, heart$chest_pain_type, heart$resting_electrocardiograph, heart$heart_disease_diagnosis)
+cor(x,y)
